@@ -1,5 +1,6 @@
 <?php 
 require_once './vendor/autoload.php';
+
 use ExemploPDOMySQL\MySQLConnection;
 
 $bd = new MySQLConnection();
@@ -17,6 +18,7 @@ $generos = $comando->fetchAll(PDO::FETCH_ASSOC);
     <title>Biblioteca</title>
 </head>
 <body>
+    <a href="insert.php">Novo Gênero</a>
     <table>
         <tr>
             <th>Id</th>
